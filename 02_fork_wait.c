@@ -1,3 +1,4 @@
+//02s_fork_wait
 
 #include <stdio.h>
 #include <unistd.h>

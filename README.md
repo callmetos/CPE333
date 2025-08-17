@@ -6,4 +6,3 @@
 - `04_fork_limit.c` — count how many forks succeed (safe mode; adjustable)
 - `05_pipe_basic.c` — pipe() + fork(): child sends, parent receives
 - `05_pipe_cases.c` — pipe() scenarios: sender-readback, receiver-read-before-send, burst writes
-- `Makefile` — convenient build & run

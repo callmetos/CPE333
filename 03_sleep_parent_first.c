@@ -1,3 +1,4 @@
+//Parents are dead while child is running.
 
 #include <stdio.h>
 #include <unistd.h>

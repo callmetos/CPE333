@@ -1,3 +1,4 @@
+//03_child is dead while parent is still running
 
 #include <stdio.h>
 #include <unistd.h>

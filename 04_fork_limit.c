@@ -1,3 +1,4 @@
+//04_fork_limit
 
 #define _XOPEN_SOURCE 700
 #include <stdio.h>
@@ -6,15 +7,6 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <errno.h>
-
-/*
- Safe-ish fork limit probe: create a single chain of children.
- Each child decrements remaining count and forks one new child.
- This avoids exponential growth. Throttled by usleep.
- Controls via env:
-   MAX_FORKS (default 500)
-   SLEEP_US  (default 500)
-*/
 
 static long get_env_long(const char* name, long defv) {
     char* s = getenv(name);
